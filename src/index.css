@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Newsreader", serif;
+  --font-body: "Manrope", sans-serif;
+  --font-label: "Manrope", sans-serif;
+
+  --color-background: #1a120b;
+  --color-on-background: #f1dfd3;
+  --color-surface: #1a120b;
+  --color-on-surface: #f1dfd3;
+  --color-surface-container: #271e16;
+  --color-surface-container-high: #322820;
+  --color-surface-container-highest: #3d332b;
+  --color-surface-variant: #3d332b;
+  --color-on-surface-variant: #d3c3c0;
+  --color-primary: #e7bdb1;
+  --color-on-primary: #442a22;
+  --color-primary-container: #40261e;
+  --color-secondary: #e9c349;
+  --color-on-secondary: #3c2f00;
+  --color-secondary-container: #af8d11;
+  --color-tertiary: #ffb3b5;
+  --color-on-tertiary: #680018;
+  --color-tertiary-container: #610016;
+  --color-outline: #9c8d8b;
+  --color-outline-variant: #504442;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-background font-body;
+  }
+}
+
+.parchment-texture {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBCZ5dtQZ0pbnZmoUl_YDVd0MrlIgS7b109UAuzN1rZyoqN9HIJdJx8aXCTxlhqANcPnxbbEOOfxt4wqRc24D1ziwBzM5w_7d_EKzIt2fk56Mb7fmjSULRDzsIWh6XR-TbwVMVzxISFgT7lG40psDzX_i-3h9pEYdifQf056fUBYxhtx05PAZSuc37zLcbuiYA4LJqAmaX8mIj8t0uxzowB9oA9-DiwNQPWMMvdWchfxItKhMcwhcwGofOfMkxFrKot01coYxqXdbx4");
+  background-blend-mode: multiply;
+}
+
+.wood-grain {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCCMX6qwxqYI9qlV5tvdF9hFJHYzt7l9wJsoQ6Xk76hh0RDTMXGmEgFy4G1Dyr8rhEfMIMFzSk7bB_HWRxlxqFKUJK-3yyZsDQ98qPGaW4TmIMb5EFpHTAIxdRqu_z-byilhWhl6Uyq_rYt8kGDb8EJLBNMVYHjnuEYkgHt3FqCNoiFYnsEDirOoS4Sh6M_9J-ZCa-trJqKy3dwLwtki1pra5Bbf32cRC1tifmZZxQw-ExWNqBdR0tP8WbSZz_dijJ0cmWVJZPSkr6m");
+}
+
+.deckled-edge {
+  clip-path: polygon(0% 0%, 100% 1%, 99% 100%, 1% 99%);
+}
